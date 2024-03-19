@@ -5,5 +5,5 @@ int main(){
 
     scanf("%f %f", &a, &b);
 
-    print("%f", a/b);
+    printf("%f", a/b);
 }
