@@ -1,9 +1,9 @@
 #include<stdio.h>
 
 int main(){
-    float a,b;
+    int a,b;
 
-    scanf("%f %f", &a, &b);
+    scanf("%d %d", &a, &b);
 
-    printf("%f", a/b);
+    printf("%.9f", a*1.0/b);
 }
