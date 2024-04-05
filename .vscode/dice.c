@@ -1,21 +1,23 @@
 #include<stdio.h>
 
 int main(){
-    int a,b,c;
+    int a,b,c,p;
     int max;
     scanf("%d %d %d",&a,&b,&c);
 
-    if(a=b=c){
-        printf('%d', 10000+a*1000);
-    }else if(a==b ||a==c ||b==c){
-        if(a==c){
-            printf('%d', 10000+a*1000);
-        }else if(a==b){
-            printf('%d', 1000+a*100);
-        }else{
-            printf('%d', 1000+b*100);
-        }
+    if(a==b==c){
+        p=10000+a*1000;
+        printf("%d", p);
+    }else if(a==c!=b){
+        p=1000+a*100;
+        printf("%d", p);
+    }else if(a==b!=c){
+        p=1000+a*100;
+        printf("%d", p);
+    }else if(b==c!=a){
+        printf("%d", 1000+b*100);
     }else{
+        max=a;
         if(max<b){
             max=b;
         }else if(max<c){
@@ -23,6 +25,6 @@ int main(){
         }else{
             max=a;
         }
-        printf('%d', max*100);
+        printf("%d", max*100);
     }
 }
