@@ -6,7 +6,7 @@ int main(){
     scanf("%d",&a);
 
     int num[a];
-    int high=0, low;
+    int high=-1000000, low=1000000;
     for(int i=0; i<a; i++){
         scanf("%d",&num[i]);
         if(num[i]>=high){
